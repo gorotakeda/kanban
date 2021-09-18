@@ -14,6 +14,10 @@ def create
   end
 end
 
+def show
+  @card = Card.find_by(id: params[:id])
+end
+
 private
 
 def card_params

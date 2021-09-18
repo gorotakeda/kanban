@@ -11,6 +11,7 @@
         </div>
         <div class="cardWrapper">
          <% list.cards.each do |card| %>
+         <%= link_to list_card_path(list,card), class:"cardDetail_link" do %>
           <div class="card">
            <h3 class="card_title">
             <%= card.title %>
@@ -21,6 +22,7 @@
              </div>
            <% end %>
           </div>
+          <% end %>
          <% end %>
           <div class="addCard">
             <i class="far fa-plus-square"></i>
