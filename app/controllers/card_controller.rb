@@ -20,7 +20,8 @@ def show
 end
 
 def edit
-
+  @list = List.where(user: current_user)
+  #ログインしているユーザーが作成したリストの情報を取得しています。
 end
 
 def update
